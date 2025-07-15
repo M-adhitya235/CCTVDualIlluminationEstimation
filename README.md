@@ -3,7 +3,7 @@
 Penelitian ini menggunakan metode Dual Illumination Estimation untuk meningkatkan pencahayaan dari citra CCTV jalan raya di malam hari yang memiliki kondisi pencahayaan rendah dan tidak merata. Selain itu, dalam penelitian ini juga membandingkan dengan metode konvensional seperti Histogram Equalization dan Contrast Stretching.
 
 
-# Dual Illumination Estimation
+## Dual Illumination Estimation
 
 #Parameter 
 #default values
