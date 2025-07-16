@@ -45,9 +45,9 @@ Contoh Penggunaan:
 process_video('/content/Kebunsayur_Resize.mp4', '/content/kebunsayur_dual.mp4', image_config, save_frames_dir='/content/dual/frame_ks')
 ```
 
-## Histogram Equalization (HE)
+## Histogram Equalization 
 
-### Memanggil Fungsi HE
+### Memanggil Fungsi Histogram Equalization
 ```python
 process_video_he(input_path, output_path, save_frames_dir=None)
 ````
