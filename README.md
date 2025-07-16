@@ -3,19 +3,19 @@
 Penelitian ini menggunakan metode Dual Illumination Estimation untuk meningkatkan pencahayaan dari citra CCTV jalan raya di malam hari yang memiliki kondisi pencahayaan rendah dan tidak merata. Selain itu, dalam penelitian ini juga membandingkan dengan metode konvensional seperti Histogram Equalization dan Contrast Stretching.
 
 ### Cara Penggunaan 
-Untuk menggunakan program ini, cukup dengan **memasukkan video CCTV ke direktori yang sesuai** (misalnya `/content/` jika di Google Colab), lalu atur `input_path` ke lokasi video tersebut.
+Untuk menggunakan program ini dapat mengikuti langkah-langkah berikut.
+1. Memasukkan video rekaman CCTV yang ingin diproses (misalnya, `/content/` jika di Google Colab).
+2. Program ini mendukung tiga metode peningkatan pencahayaan, yaitu:
+   - Dual Illumination Estimation
+   - Histogram Equalization
+   - Contrast Stretching
+  
+Seluruh metode dapat dijalankan untuk kebutuhan perbandingan hasil, namun pengguna juga bebas memilih metode tertentu sesuai kebutuhan.
 
-Setelah itu, program akan:
-1. Membaca video sesuai `input_path`
-2. Memprosesnya menggunakan metode DUAL/HE/CS
-3. Menyimpan hasil video ke lokasi `output_path`
-4. Menyimpan frame-frame hasil di folder `save_frames_dir`
-
-### Contoh Sederhana
-Misalnya, jika memiliki video dengan nama `jalanmalam.mp4`, maka bisa langsung dijalankan seperti ini:
-```python
-process_video("/content/jalanmalam.mp4", "/content/jalanmalam_dienhanced.mp4", image_config)
-```
+3. Panggil fungsi sesuai metode dengan mengatur parameter berikut.
+   - `input_path` : Lokasi video input.
+   - `output_path`: Lokasi penyimpanan hasil video.
+   - `save_frames_dir`: Direktori penyimpanan frame hasil (jika ingin menyimpan hasil per-frame). 
 
 ## Dual Illumination Estimation
 
